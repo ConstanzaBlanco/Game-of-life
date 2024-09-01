@@ -1,5 +1,8 @@
 namespace Ucu.Poo.GameOfLife;
-
+//La clase Lógica tiene como única responsabilidad manejar la parte
+//lógica del juego a travez de un Tablero(el cual un atributo de la misma), calcula y rehace el tablero con los nuevos valores.
+//Modifica el tablero a travéz del método Jugar cada vez que se le pida
+//Cumple con Expert ya que solo tiene conocimiento que necesita para cumplir su responsabilidad
 public class Logica//Clase que tiene como responsabilidad aplicar las reglas del juego al tablero dado
 {
     private Tablero tablero;//Atributo privado que es una instancia de tablero 
