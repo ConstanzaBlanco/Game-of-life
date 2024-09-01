@@ -2,7 +2,7 @@
 
 namespace Ucu.Poo.GameOfLife
 {
-    class Program//Clase que su responsabilidad es ejecutar el codigo llamando instancias y métodos infinitamente
+    class Program//Clase que su responsabilidad es ejecutar el codigo llamando instancias al inicio y métodos infinitamente
     {
         static void Main(string[] args)//Metodo que ejecuta el codigo
         {
