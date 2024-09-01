@@ -18,8 +18,8 @@ public class Imprimir//Clase que su responsabilidad es imprimir el tablero en la
 
     public void ImprimirTablero()//Metodo para imprimir el tablero en la consola
     {
-        Console.Clear();//Borra la consola
-        Console.WriteLine("\x1b[3J");
+        Console.Clear();
+        Console.WriteLine("\x1b[3J");//Borra la pantalla y el historial de desplazamiento en la consola
         StringBuilder s = new StringBuilder();//Crea una nueva instancia de la clase "StringBuilder"
         bool[,] b = tablero.Obtener_gameBoard(); //b obtiene el nuevo estado del tablero
         for (int y = 0; y < tablero.boardHeight; y++)//Recorre cada fila y si "b[x,y]" es True, pone una celula, sino pone "___"

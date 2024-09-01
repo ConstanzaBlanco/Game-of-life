@@ -13,7 +13,7 @@ public class Tablero //Clase que tiene como responsabilidad crear el tablero,obt
     {
         gameBoard = lector.ReadArchive();//Obtiene el tablero
         boardWidth = gameBoard.GetLength(0);//Obtiene el ancho del tablero
-        boardHeight = gameBoard.GetLength(1);//Obtiene el alto del tablero
+        boardHeight = gameBoard.GetLength(1);//Obtiene la altura del tablero
     }
     public bool[,] Obtener_gameBoard()//Metodo que devuelve el tablero
     {

@@ -60,6 +60,6 @@ public class Logica//Clase que tiene como responsabilidad aplicar las reglas del
             }
         }
 
-        tablero.Establecer_gameBoard(cloneboard);//Devuelve el tablero con las reglas aplicadas
+        tablero.Establecer_gameBoard(cloneboard);//Devuelve el tablero con las reglas aplicadas y lo establece a traves del método Establecer_gameBoard de Tablero
     }
 }
