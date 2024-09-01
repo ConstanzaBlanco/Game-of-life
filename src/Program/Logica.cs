@@ -1,19 +1,19 @@
 namespace Ucu.Poo.GameOfLife;
 
-public class Logica
+public class Logica//Clase que tiene como responsabilidad aplicar las reglas del juego al tablero dado
 {
-    private Tablero tablero;
+    private Tablero tablero;//Atributo privado que es una instancia de tablero 
 
-    public Logica(Tablero tablero)
+    public Logica(Tablero tablero)//Constructor que usa como parametro una instancia de tablero y la asigna al atributo privado
     {
         this.tablero = tablero;
     }
 
-    public void Jugar()
+    public void Jugar()//Metodo que obtiene el tablero dado al atributo privado tablero y aplica las reglas
     {
-        bool[,] gameBoard = tablero.Obtener_gameBoard();
-        bool[,] cloneboard = new bool[tablero.boardWidth, tablero.boardHeight];
-        for (int x = 0; x < tablero.boardWidth; x++)
+        bool[,] gameBoard = tablero.Obtener_gameBoard();//Obtiene el tablero
+        bool[,] cloneboard = new bool[tablero.boardWidth, tablero.boardHeight];//Crea una matriz de booleanos con el largo y alto del tablero
+        for (int x = 0; x < tablero.boardWidth; x++)//Recorre el tablero por cada fila y aplica las reglas del juego
         {
             for (int y = 0; y < tablero.boardHeight; y++)
             {
@@ -57,6 +57,6 @@ public class Logica
             }
         }
 
-        tablero.Establecer_gameBoard(cloneboard);
+        tablero.Establecer_gameBoard(cloneboard);//Devuelve el tablero con las reglas aplicadas
     }
 }
