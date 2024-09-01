@@ -1,5 +1,8 @@
 namespace Ucu.Poo.GameOfLife;
 using System.IO;
+//Tiene como única responsabilidad leer el archivo de tipo .txt para configurar el tablero.
+//Traspasa los 0´s y 1´s a valores booleanos contenidos en una lista (es decir una matriz)
+//Esta clase es experta en leer el archivo y convertir los datos de este.
 public class Lector_Archivo//Clase que su responsabilidad es leer el archivo dado
 {
     public bool[,] ReadArchive()//Metodo para leer el archivo
