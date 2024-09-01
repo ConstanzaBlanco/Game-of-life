@@ -1,23 +1,14 @@
 ﻿using System;
-
+//Tiene como única responsabilidad crear una instancia de organizador y llamar a su método que inicia el juego
+//Es experta manejando solo la instancia de Organizador y llamar a su método para jugar, sin saber nada más de las otras clases
 namespace Ucu.Poo.GameOfLife
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Lector_Archivo lector = new Lector_Archivo();
-            Tablero tablero = new Tablero();
-            tablero.Crear_Tablero(lector);
-            Logica logica = new Logica(tablero);
-            Imprimir imprimir = new Imprimir(tablero);
-            while (true)
-            {
-                imprimir.ImprimirTablero();
-                logica.Jugar();
-               
-            }
-            
+            Organizador Juego = new Organizador();
+            Juego.EjecutarJuego();
         }
     }
 }
